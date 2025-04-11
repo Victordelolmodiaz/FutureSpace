@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #d4e6f1;
+      margin: 0;
+      padding: 0;
+      color: #34495e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .task-input {
+      width: 570px;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      border: 2px solid #ccc;
+      background-color: #ecf0f1;
+      color: #34495e;
+    }
+
+    .add-task-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: #cf5f53;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .add-task-btn:hover {
+      background-color: #d35400;
+    }
+
+    .task-list {
+      margin-top: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: #0921d3dc;
+      color: white;
+    }
+
+    .delete-btn {
+      padding: 10px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+    <input type="text" class="task-input" placeholder="Añadir nueva tarea..." />
+    <button class="add-task-btn">Añadir tarea</button>
+
+    <ul class="task-list">
+      <!-- La lista de tareas está vacía inicialmente -->
+    </ul>
+  </div>
+
+</body>
+</html>
